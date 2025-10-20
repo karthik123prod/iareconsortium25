@@ -4,256 +4,160 @@ import { Calendar, Users, Trophy, IndianRupee, Eye, UserPlus } from 'lucide-reac
 function Events() {
   const eventsData = [
     {
+      id: 'paper-presentation',
+      title: 'Technical Paper Presentation-Where Ideas Meet Innovation.',
+      category: 'Paper Presentation',
+      date: 'October 31 - November 1, 2025',
+      time: '9:00 AM - 1:00 PM',
+      venue: 'Conference Hall',
+      participants: '2-3 per team',
+      registrationFee: '200',
+      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
+      shortDescription: 'The Technical Paper Presentation is an event designed to encourage students and professionals to explore, research, and present innovative ideas in various fields of technology and science. Participants prepare and present a paper on a technical topic of their choice ',
+      description: 'Present your technical papers on cutting-edge technologies, research findings, or innovative ideas. Get feedback from experts and industry professionals.',
+      
+    },
+    {
       id: 'Webathon',
       title: 'WebNova - Igniting the Future Web',
       category: 'Webathon',
-      date: 'October 30, 2025',
+      date: 'October 31 - November 1, 2025',
       time: '9:00 AM - 6:00 PM',
       venue: 'Main Auditorium',
       participants: '2-4 per team',
       registrationFee: '300',
-      prizePool: '50,000',
-      image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800',
-      shortDescription: 'WebNova is an innovative webathon designed to inspire creativity and problem-solving through Prompt Engineering and AI-powered tools.',
+      image: 'https://media.deloitte.com/is/image/deloitte/800-600-governance-privacy',
+      shortDescription: 'WebNova is an innovative webathon designed to inspire creativity and problem-solving through Prompt Engineering and AI-powered tools. Participants will explore how AI — especially generative AI, large language models, and advanced prompt engineering',
       description: 'Participants will explore how AI — especially generative AI, large language models, and advanced prompt engineering — can be used to create adaptive, intelligent, and impactful solutions for real-world problems.',
-      rules: [
-        'Each team can have 2 to 4 members.',
-	      'Participants can be from any domain and any Year',
-        'Each participant can be part of only one team',
-        'Registration Fee: ₹300 per Team',
-        'Registration is mandatory for all teams before the deadline.'
-
-      ],
-      themes: [
-        'Participants can choose one theme from the three broad themes:',
-        'Smart Society — AI and Prompt Engineering for civic intelligence and public services',
-	      'Health & Wellbeing — AI-powered solutions for healthcare, wellness, and accessibility.',
-        'Reimagine Commerce/Finance — AI-driven innovations for industrial/private sector trade, finance, or personalized commerce.'
-      ],
-      guidelines: [
-        'Register your team before October 25, 2025',
-        'All team members must be present',
-        'Refreshments will be provided',
-        'Workspace and power outlets available',
-        'Mentors available for guidance',
-        'Detailed abstracts and problem statements for each theme will be revealed one day before the event.',
-        'Teams must work on the problem statement provided for their chosen theme.',
-        'Participants are expected to develop web-based platforms — working web pages or web applications that address the problem.',
-        'Proposed solutions must be original and built within the event duration.'
-      ]
+      
     },
     {
-      id: 'robotics',
-      title: 'House of Echoes',
-      category: 'Robotics',
-      date: 'October 30-31, 2025',
-      time: '10:00 AM - 5:00 PM',
-      venue: 'Robotics Arena',
-      participants: '3 per team',
-      registrationFee: '800',
-      prizePool: '75,000',
-      image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=800',
-      shortDescription: 'Battle of the bots - Design and fight with your robot.',
-      description: 'Build and program your combat robot to compete in an epic arena battle. Show your engineering prowess and strategic skills in this action-packed competition.',
-      rules: [
-        'Robot weight limit: 25 kg',
-        'Wireless control required',
-        'No explosive or hazardous materials',
-        'Minimum 3 rounds per match',
-        'Safety gear mandatory for operators',
-        'Technical inspection before competition'
-      ],
-      guidelines: [
-        'Submit robot specifications by October 20',
-        'Practice arena available day before event',
-        'Repair tools and workspace provided',
-        'Battery charging stations available',
-        'Follow all safety protocols'
-      ]
-    },
-    {
-      id: 'Divide And Conquer Beyond Your Limits',
-      title: 'Techno Hunt',
-      category: 'Artificial Intelligence',
-      date: 'October 30, 2025',
-      time: '11:00 AM - 4:00 PM',
-      venue: 'Computer Lab - Block A',
-      participants: '4 per team',
-      registrationFee: '200',
-      prizePool: '40,000',
-      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      shortDescription: 'Get ready to ignite your inner tech explorer in “Decode & Conquer”.',
-      description: 'A thrilling 2-day technical treasure hunt that blends brainpower, coding, and adventure! This isn’t your average hunt — it’s a high-energy quest where each clue challenges your logic, coding skills, and teamwork.',
-      rules: [
-        'Team size: 4 members',
-        'The hunt will have multiple rounds with technical and logical clues to solve.',
-        'Mobile phones are not allowed during the event.',
-        'A time limit will be given, and the team completing all tasks first will be the winner.',
-        'The registration fee is 200/- per team.'
-      ],
-      themes: [
-        'Not yet given.'
-      ],
-      guidelines: [
-        'Bring laptops with ML frameworks pre-installed',
-        'Anaconda or Jupyter Notebook recommended',
-        'Internet available for library downloads',
-        'Presentation of results and methodology mandatory',
-        'Evaluation based on accuracy, approach, and innovation',
-        'Judges decision is final',
-        'Time limit: 5 hours'
-      ],
-      prizes: {
-        first: '₹20,000',
-        second: '₹12,000',
-        third: '₹8,000'
-      }
-    },
-    {
-      id: 'web-dev',
-      title: 'AquaStruct',
-      category: 'Web Development',
-      date: 'October 31, 2025',
-      time: '9:00 AM - 3:00 PM',
-      venue: 'IT Lab - Block B',
-      participants: '2 per team',
-      registrationFee: '350',
-      prizePool: '30,000',
-      image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800',
-      shortDescription: 'The "AquaStruct" Concrete Canoe Challenge is an event where student teams, typically those studying civil engineering, design, construct, and race a canoe made entirely out of concrete.',
-      description: 'The challenge focuses on applying engineering principles, project management, and material science to create a water-worthy vessel from a material traditionally known for sinking. Teams are judged on a technical design, an oral presentation, and the final products aesthetics and craftsmanship.',
-      rules: [
-        'Team size: 2 members',
-        'Theme revealed at start',
-        'Any web framework allowed',
-        'Responsive design mandatory',
-        'Must be deployed live',
-        'Code must be on GitHub'
-      ],
-      guidelines: [
-        'Setup development environment beforehand',
-        'Free hosting credits provided',
-        'Focus on UI/UX and functionality',
-        'Browser compatibility required',
-        'Presentation to judges'
-      ]
-    },
-    {
-      id: 'iot-showcase',
-      title: 'IoT Innovation Challenge',
-      category: 'Internet of Things',
-      date: 'October 31, 2025',
-      time: '10:00 AM - 4:00 PM',
-      venue: 'Electronics Lab',
-      participants: '3-4 per team',
-      registrationFee: '600',
-      prizePool: '45,000',
-      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
-      shortDescription: 'Create smart solutions using IoT devices.',
-      description: 'Design and implement IoT-based solutions to everyday problems. Use sensors, microcontrollers, and cloud platforms to build your innovative project.',
-      rules: [
-        'Team size: 3-4 members',
-        'Arduino/Raspberry Pi/ESP32 allowed',
-        'Must demonstrate working prototype',
-        'Cloud integration bonus points',
-        'Safety standards must be met',
-        'Project documentation required'
-      ],
-      guidelines: [
-        'Bring your own components',
-        'Power supply provided',
-        'WiFi connectivity available',
-        'Testing bench provided',
-        'Expert guidance available'
-      ]
-    },
-    {
-      id: 'tech-quiz',
-      title: 'Tech Quiz Competition',
-      category: 'Quiz',
-      date: 'October 30, 2025',
+      id: 'Project Expo',
+      title: 'VisionX - Unleash the power within your ideas',
+      category: 'Project Expo',
+      date: 'October 31 - November 1, 2025',
       time: '2:00 PM - 4:00 PM',
       venue: 'Seminar Hall',
-      participants: '2 per team',
-      registrationFee: '200',
-      prizePool: '15,000',
-      image: 'https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=800',
-      shortDescription: 'Test your knowledge across various tech domains.',
+      participants: '3 members per team',
+      registrationFee: '300',
+      image: 'https://news.kiit.ac.in/wp-content/uploads/2022/07/PROJECT-EXPO-2022-Day-2-750x430.jpg',
+      shortDescription: 'VisionX is a Project Expo that showcases innovative projects from all engineering departments, promoting creativity, teamwork, and practical learning while encouraging interdisciplinary collaboration and real-world problem-solving.  ',
       description: 'A comprehensive quiz covering programming, technology trends, innovations, and general tech awareness. Multiple rounds with increasing difficulty.',
-      rules: [
-        'Team size: 2 members',
-        'Multiple choice and buzzer rounds',
-        'No electronic devices allowed',
-        'Negative marking in final round',
-        'Top 10 teams advance to finals',
-        'Quiz master decision is final'
-      ],
-      guidelines: [
-        'Arrive 15 minutes early',
-        'Study current tech trends',
-        'Cover programming fundamentals',
-        'Know about latest innovations',
-        'Fair play expected'
-      ]
+      
     },
     {
-      id: 'design-thinking',
-      title: 'Design Thinking Workshop',
-      category: 'Workshop',
-      date: 'October 30, 2025',
+       id: 'LAN Gaming',
+      title: 'BattleLAN - Link up. Lock in. Light it up',
+      category: 'LAN Gaming',
+      date: 'October 31 - November 1, 2025',
       time: '11:00 AM - 2:00 PM',
       venue: 'Innovation Lab',
-      participants: 'Individual',
-      registrationFee: '250',
-      prizePool: 'Certificates',
-      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
-      shortDescription: 'Learn systematic approach to problem-solving.',
-      description: 'An interactive workshop on design thinking methodology. Learn how to identify problems, ideate solutions, and create prototypes using systematic approaches.',
-      rules: [
-        'Individual participation',
-        'Active participation required',
-        'Bring notebook and pen',
-        'Group activities included',
-        'Certificate on completion',
-        'Attendance mandatory'
-      ],
-      guidelines: [
-        'No prior experience needed',
-        'Materials provided',
-        'Interactive sessions',
-        'Real case studies',
-        'Expert facilitators'
-      ]
+      participants: '3 - 4 members per team ',
+      registrationFee: '200',
+      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      shortDescription: 'BattleLAN is an exciting and competitive LAN gaming event combines the thrill of gaming with the creativity of technology, featuring both technical and non-technical games. Participants will compete in teams, showcasing their gaming skills, coding abilities, and creative problem-solving.',
+      description: 'BattleLAN is more than just a gaming competition — it’s a platform for students to connect, compete, and collaborate. With a perfect mix of fun and technology, this event will be one of the most dynamic highlights of the national-level fest at IARE.',
+      
     },
     {
-      id: 'paper-presentation',
-      title: 'Technical Paper Presentation',
-      category: 'Paper Presentation',
-      date: 'October 31, 2025',
-      time: '9:00 AM - 1:00 PM',
-      venue: 'Conference Hall',
-      participants: '2-3 per team',
+      id: 'Cyber Security',
+      title: 'House of Echoes - The evidence isn’t in blood — it’s in bytes',
+      category: 'Cyber Security',
+      date: 'October 31 - November 1, 2025',
+      time: '10:00 AM - 5:00 PM',
+      venue: 'Robotics Arena',
+      participants: '2-3 members per team',
+      registrationFee: '149',
+      image: 'https://media.licdn.com/dms/image/v2/D4E22AQFMT-L7TDcxWw/feedshare-shrink_800/feedshare-shrink_800/0/1703223822931?e=2147483647&v=beta&t=gSRHA81ogxul4Ax6JaAfNw-EpkpOIRS3Oz_dejAstz8',
+      shortDescription: 'House of Echoes is a cybercrime investigation event that blends analytical reasoning with technical cybersecurity concepts. Participants step into the role of digital forensics specialists, tracing clues through simulated data leaks, encrypted communications, and metadata trails to uncover the identity of a cybercriminal.',
+      description: 'Robo Wars is the ultimate test of engineering, design, and combat strategy. Teams must design, build, and operate robots capable of battling opponents in a specially designed arena. With weight restrictions and safety requirements, this event challenges participants to create the perfect balance between offense, defense, and mobility.',
+     
+    },
+    {
+      id: 'Treasure Hunt',
+      title: 'Techno Hunt - Divide And Conquer Beyond Your Limits',
+      category: 'Treasure Hunt',
+      date: 'October 31 - November 1, 2025',
+      time: '11:00 AM - 4:00 PM',
+      venue: 'Computer Lab - Block A',
+      participants: '4 members per team',
+      registrationFee: '200',
+      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      shortDescription: 'Get ready to ignite your inner tech explorer in “Decode & Conquer”, a thrilling 2-day technical treasure hunt that blends brainpower, coding, and adventure! This isn’t your average hunt — it’s a high-energy quest where each clue challenges your logic, coding skills, and teamwork.',
+      description: 'A thrilling 2-day technical treasure hunt that blends brainpower, coding, and adventure! This isn’t your average hunt — it’s a high-energy quest where each clue challenges your logic, coding skills, and teamwork.',
+      
+    },
+    {
+      id: 'Cyber Crime',
+      title: 'Murder Mystery – One Crime. A Hundred Suspects. One Winner',
+      category: 'Cyber Crime',
+      date: 'October 31 - November 1, 2025',
+      time: '9:00 AM - 6:00 PM',
+      venue: 'Main Auditorium',
+      participants: 'Max 3 members per team',
+      registrationFee: '200',
+      image: 'https://i.pinimg.com/1200x/2f/7e/3d/2f7e3dee2cf9e452805ddc58cce5b380.jpg',
+      shortDescription: '“Murder Mystery — One Crime. A Hundred Suspects. One Winner” is an immersive investigative challenge that puts participants’ logic, intuition, and teamwork to the ultimate test. Stepping into the role of detectives, participants must decode clues, analyze evidence, and unravel a tangled web of lies to uncover the truth behind a mysterious crime. ',
+      description: 'The event demands sharp observation, critical thinking, and the ability to separate fact from deception. Every clue, statement, and twist will push participants to think deeper and connect the dots with precision and reasoning. Beyond the thrill of solving the mystery, Murder Mystery emphasizes teamwork, communication, and strategic problem-solving. Accuracy, clarity of logic, and the method used to reach the final verdict will define the best detectives of the game. ',
+      
+    },
+    {
+      id: 'Concrete Canoe',
+      title: 'AquaStruct - The Concrete Canoe Challenge',
+      category: 'Concrete Canoe',
+      date: 'October 31 - November 1, 2025',
+      time: '9:00 AM - 3:00 PM',
+      venue: 'IT Lab - Block B',
+      participants: '1-5 members per team',
       registrationFee: '300',
-      prizePool: '25,000',
-      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      shortDescription: 'Present your research and innovative ideas.',
-      description: 'Present your technical papers on cutting-edge technologies, research findings, or innovative ideas. Get feedback from experts and industry professionals.',
-      rules: [
-        'Team size: 2-3 members',
-        'Paper submission by October 25',
-        'Original research required',
-        'Plagiarism strictly prohibited',
-        '15 minutes presentation + 5 min Q&A',
-        'PPT format mandatory'
-      ],
-      guidelines: [
-        'Follow IEEE paper format',
-        'Submit abstract first',
-        'Bring presentation on USB',
-        'Dress code: Formal',
-        'Technical depth evaluated'
-      ]
-    }
+      image: 'https://viterbischool.usc.edu/wp-content/uploads/2025/05/concrete-canoe.jpg',
+      shortDescription: 'The "AquaStruct" is an event where student teams, typically those are studying civil engineering, design, construction, and race a canoe made entirely out of concrete. The challenge focuses on applying engineering principles, project managementto create a water-worthy vessel from a material traditionally known for sinking. ',
+      description: 'The challenge focuses on applying engineering principles, project management, and material science to create a water-worthy vessel from a material traditionally known for sinking. Teams are judged on a technical design, an oral presentation, and the final products aesthetics and craftsmanship.',
+      
+    },
+    {
+      id: 'Poster Presentation',
+      title: 'EngiVision - Imagine. Innovate. Inspire.',
+      category: 'Poster Presentation',
+      date: 'October 31 - November 1, 2025',
+      time: '10:00 AM - 4:00 PM',
+      venue: 'Electronics Lab',
+      participants: '3-4 members per team',
+      registrationFee: '200',
+      image: 'https://i.pinimg.com/1200x/00/ea/38/00ea385888c8fcf08c4f3c3ecbb39a5f.jpg',
+      shortDescription: ' The Poster Presentation is an engaging technical event designed to encourage students toshowcase their innovative ideas, research findings, and creative concepts through visuallyappealing posters. Participants will present their ideas concisely, combining both technical depthand design aesthetics. ',
+      description: ' As part of CONSORTIUM 2025, this event provides a platform for students to present groundbreaking ideas, research concepts, and engineering solutions through visually engaging posters Participants are encouraged to merge technical depth with aesthetic presentation, showcasing their unique perspective on engineering challenges, sustainability, and futuristic designs.',
+      
+    },
+    {
+      id: 'Short Film',
+      title: 'Short Film Contest - Frames of Vision, Tales of Heart',
+      category: 'Short Film',
+      date: 'October 31 - November 1, 2025',
+      time: '2:00 PM - 4:00 PM',
+      venue: 'Seminar Hall',
+      participants: 'max 5 members per team',
+      registrationFee: '249',
+      image: 'https://sofy.tv/blog/wp-content/uploads/2018/01/1-41-1200x675.jpg',
+      shortDescription: 'Chitrakala – The Cinema Club at IARE proudly presents the Short Film and Photography Contest, organized by the Department of Information Technology as part of Consortium 2k25. This event is a celebration of creativity and storytelling, giving students a platform to showcase their ideas through films and photography.',
+      description: 'Chitrakala – The Cinema Club at IARE proudly presents the Short Film and Photography Contest, organized by the Department of Information Technology as part of Consortium 2k25. This event is a celebration of creativity and storytelling, giving students a platform to showcase their ideas through films and photography. Participants can capture the essence of college life, innovation, and imagination, turning moments into compelling visual stories.',
+      
+    },
+    {
+      id: 'Photography',
+      title: 'Photography Contest - Frames of Vision, Tales of Heart',
+      category: 'Photography',
+      date: 'October 31 - November 1, 2025',
+      time: '2:00 PM - 4:00 PM',
+      venue: 'Seminar Hall',
+      participants: 'max 5 members per team',
+      registrationFee: '99',
+      image: 'https://www.adorama.com/alc/wp-content/uploads/2021/04/photography-camera-learning-feature.jpg',
+      shortDescription: 'Chitrakala – The Cinema Club at IARE proudly presents the Short Film and Photography Contest, organized by the Department of Information Technology as part of Consortium 2k25. This event is a celebration of creativity and storytelling, giving students a platform to showcase their ideas through films and photography.',
+      description: 'Chitrakala – The Cinema Club at IARE proudly presents the Short Film and Photography Contest, organized by the Department of Information Technology as part of Consortium 2k25. This event is a celebration of creativity and storytelling, giving students a platform to showcase their ideas through films and photography. Participants can capture the essence of college life, innovation, and imagination, turning moments into compelling visual stories.',
+      
+    },
+    
   ];
 
   const styles = {
@@ -417,15 +321,12 @@ function Events() {
                   <IndianRupee size={16} />
                   <span>₹{event.registrationFee}</span>
                 </div>
-                <div style={styles.eventDetail}>
-                  <Trophy size={16} />
-                  <span>₹{event.prizePool}</span>
-                </div>
+                
               </div>
 
               <div style={styles.eventActions}>
                 <Link
-                  to={`/event/${event.id}`}
+                  to={`/events/${event.id}`}
                   style={{ ...styles.button, ...styles.viewButton }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.background = 'rgba(59, 130, 246, 0.2)';

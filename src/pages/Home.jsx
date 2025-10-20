@@ -1,5 +1,6 @@
 import { Calendar, Users, Trophy, Zap, Target, Rocket } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import background from '/src/assests/background.jpg';
 
 function Home() {
   const styles = {
@@ -9,7 +10,7 @@ function Home() {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%)',
+      background: '#000',
       overflow: 'hidden',
     },
     heroOverlay: {
@@ -18,10 +19,11 @@ function Home() {
       left: 0,
       right: 0,
       bottom: 0,
-      background: 'url("https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1920") center/cover',
-      opacity: 0.15,
+      background: `url(${background}) center/cover no-repeat`,
+      opacity: 1,
       zIndex: 0,
-    },
+},
+
     heroPattern: {
       position: 'absolute',
       top: 0,
@@ -51,21 +53,24 @@ function Home() {
       animation: 'fadeInUp 1s ease-out',
     },
     subtitle: {
-      fontSize: '32px',
-      color: '#e2e8f0',
-      marginBottom: '15px',
-      fontWeight: '600',
-      animation: 'fadeInUp 1.2s ease-out',
-    },
-    description: {
-      fontSize: '20px',
-      color: '#cbd5e1',
-      marginBottom: '30px',
-      maxWidth: '800px',
-      margin: '0 auto 40px',
-      lineHeight: '1.6',
-      animation: 'fadeInUp 1.4s ease-out',
-    },
+  fontSize: '32px',
+  color: '#f1f5f9',
+  marginBottom: '15px',
+  fontWeight: '600',
+  textShadow: '0 0 10px rgba(168, 85, 247, 0.6)',
+  animation: 'fadeInUp 1.2s ease-out',
+},
+
+description: {
+  fontSize: '20px',
+  color: '#e2e8f0',
+  marginBottom: '30px',
+  maxWidth: '800px',
+  margin: '0 auto 40px',
+  lineHeight: '1.6',
+  textShadow: '0 0 6px rgba(147, 51, 234, 0.4)',
+  animation: 'fadeInUp 1.4s ease-out',
+},
     dateBox: {
       display: 'inline-block',
       background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)',
@@ -111,7 +116,8 @@ function Home() {
     },
     features: {
       padding: '100px 20px',
-      background: 'linear-gradient(180deg, #0f172a 0%, #1e293b 100%)',
+      background: 'linear-gradient(180deg, #0a0015 0%, #12002b 100%)',
+
     },
     featuresContainer: {
       maxWidth: '1400px',
@@ -134,10 +140,11 @@ function Home() {
       marginBottom: '60px',
     },
     featuresGrid: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-      gap: '30px',
-    },
+  display: 'grid',
+  gridTemplateColumns: 'repeat(3, 1fr)', // force 3 columns
+  gap: '30px',
+},
+
     featureCard: {
       background: 'linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%)',
       padding: '40px',
@@ -173,6 +180,46 @@ function Home() {
       color: '#cbd5e1',
       lineHeight: '1.6',
     },
+    featuresSection: {
+  background: 'linear-gradient(180deg, #0a0015 0%, #12002b 100%)',
+  padding: '100px 90px', // Removed left-right padding
+  width: '100%',
+},
+
+featuresWrapper: {
+  maxWidth: '100%',      // Full width container
+  margin: '0',           // Remove auto-center margin
+  padding: '0',          // Remove internal padding
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  gap: '60px',
+  flexWrap: 'wrap',
+},
+
+
+featuresLeft: {
+  flex: '1 1 60%',
+  minWidth: '350px',
+},
+
+featuresRight: {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginRight: '0', // Remove excessive space
+  paddingRight: '10px'
+},
+
+sideImage: {
+  width: '100%',
+  maxWidth: '600px',
+  borderRadius: '50px',
+  transition: 'transform 0.4s ease',
+},
+
+
+
     stats: {
       padding: '80px 20px',
       background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)',
@@ -261,7 +308,22 @@ function Home() {
           }
         `}
       </style>
+      <style>
+{`
+  @media (max-width: 900px) {
+    .featuresWrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+    .featuresRight {
+      order: -1;
+      margin-bottom: 40px;
+    }
+  }
+`}
+</style>
 
+<div className="animate-fadeIn">
       <section style={styles.hero}>
         <div style={styles.heroOverlay}></div>
         <div style={styles.heroPattern}></div>
@@ -274,7 +336,7 @@ function Home() {
           </p>
           <div style={styles.dateBox}>
             <Calendar size={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '10px' }} />
-            October 30-31, 2025
+            October 31-November 1, 2025
           </div>
           <div style={styles.ctaButtons}>
             <Link to="/register" style={{ ...styles.ctaButton, ...styles.ctaPrimary }}>
@@ -287,39 +349,110 @@ function Home() {
         </div>
       </section>
 
-      <section style={styles.features}>
-        <div style={styles.featuresContainer}>
-          <h2 style={styles.sectionTitle}>Why Join Consortium 2025?</h2>
-          <p style={styles.sectionSubtitle}>
-            Experience the future of technology and innovation at IARE's flagship event
-          </p>
-          <div style={styles.featuresGrid}>
-            {features.map((feature, index) => {
-              const Icon = feature.icon;
-              return (
-                <div
-                  key={index}
-                  style={styles.featureCard}
-                  onMouseEnter={(e) => {
-                    Object.assign(e.currentTarget.style, styles.featureCardHover);
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'translateY(0)';
-                    e.currentTarget.style.boxShadow = 'none';
-                    e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.2)';
-                  }}
-                >
-                  <div style={styles.featureIcon}>
-                    <Icon size={36} color="#fff" />
-                  </div>
-                  <h3 style={styles.featureTitle}>{feature.title}</h3>
-                  <p style={styles.featureDescription}>{feature.description}</p>
+      <section style={styles.featuresSection}>
+  <div
+    style={{
+      maxWidth: '1200px', // ✅ Fixed width
+      margin: '0 auto',   // ✅ Center the section
+      padding: '0 0px',  // ✅ Add side padding for smaller screens
+      paddingLeft: '0px'
+    }}
+  >
+    <div style={styles.featuresWrapper} className="featuresWrapper">
+      
+      {/* Right Side Image */}
+      <div style={styles.featuresRight} className="featuresRight">
+        <img
+          src="/src/assests/side1.png"
+          alt="Consortium Showcase"
+          style={{
+            ...styles.sideImage,
+            width: '450px', // ✅ Fixed image width
+            height: 'auto',
+            borderRadius: '20px',
+            transition: 'transform 0.4s ease, box-shadow 0.4s ease',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'scale(1.05)';
+            e.currentTarget.style.boxShadow = '0 15px 40px rgba(59,130,246,0.4)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'scale(1)';
+            e.currentTarget.style.boxShadow = 'none';
+          }}
+        />
+      </div>
+
+      {/* Left Side Content */}
+      <div style={{ ...styles.featuresLeft, flex: 1 }}>
+        <h2 style={styles.sectionTitle}>Why Join Consortium 2025?</h2>
+        <p style={styles.sectionSubtitle}>
+          Experience the future of technology and innovation at IARE's flagship event.
+        </p>
+
+        <div
+          style={{
+            ...styles.featuresGrid,
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '25px',
+          }}
+        >
+          {features.map((feature, index) => {
+            const Icon = feature.icon;
+            return (
+              <div
+                key={index}
+                style={{
+                  ...styles.featureCard,
+                  transition: 'all 0.3s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.boxShadow = '0 15px 40px rgba(59,130,246,0.3)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}
+              >
+                <div style={styles.featureIcon}>
+                  <Icon size={34} color="#fff" />
                 </div>
-              );
-            })}
-          </div>
+                <h3 style={styles.featureTitle}>{feature.title}</h3>
+                <p style={styles.featureDescription}>{feature.description}</p>
+              </div>
+            );
+          })}
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+
+  {/* Responsive Layout Fix */}
+  <style>
+    {`
+      @media (max-width: 900px) {
+        .featuresWrapper {
+          flex-direction: column;
+          text-align: center;
+          gap: 40px;
+        }
+        .featuresRight {
+          order: -1;
+          margin-bottom: 30px;
+        }
+        .featuresLeft {
+          width: 100%;
+        }
+        .featuresRight img {
+          width: 100% !important; /* ✅ Image scales down on small screens */
+        }
+      }
+    `}
+  </style>
+</section>
+
+
 
       <section style={styles.stats}>
         <div style={styles.statsGrid}>
@@ -341,6 +474,7 @@ function Home() {
           </div>
         </div>
       </section>
+    </div>
     </div>
   );
 }
