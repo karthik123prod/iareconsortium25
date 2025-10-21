@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 🌐 GLOBAL RESPONSIVENESS */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Default text scaling */
+h1, h2, h3, p {
+  margin: 0;
+}
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+  section {
+    padding: 60px 40px;
+  }
+  h1 { font-size: 2.8rem; }
+  h2 { font-size: 1.8rem; }
+  p { font-size: 1rem; }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+  section {
+    padding: 40px 20px;
+  }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.3rem; }
+  p { font-size: 0.9rem; }
+
+  .featuresWrapper, .heroContent, .ctaButtons {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .ctaButtons a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}

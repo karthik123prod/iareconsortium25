@@ -115,7 +115,7 @@ description: {
       backdropFilter: 'blur(10px)',
     },
     features: {
-      padding: '100px 20px',
+      padding: '10px 100px',
       background: 'linear-gradient(180deg, #0a0015 0%, #12002b 100%)',
 
     },
@@ -182,9 +182,14 @@ description: {
     },
     featuresSection: {
   background: 'linear-gradient(180deg, #0a0015 0%, #12002b 100%)',
-  padding: '100px 90px', // Removed left-right padding
-  width: '100%',
+  minHeight: '100vh',       // ✅ Full height on large screens
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  padding: '50px 60px',
+  boxSizing: 'border-box',
 },
+
 
 featuresWrapper: {
   maxWidth: '100%',      // Full width container
@@ -251,20 +256,11 @@ sideImage: {
   };
 
   const features = [
-    {
-      icon: Zap,
-      title: 'Cutting-Edge Technology',
-      description: 'Explore the latest innovations in AI, IoT, Robotics, and more. Get hands-on experience with emerging technologies.'
-    },
+    
     {
       icon: Trophy,
       title: 'Competitive Events',
       description: 'Participate in exciting competitions, hackathons, and coding challenges. Win amazing prizes and recognition.'
-    },
-    {
-      icon: Users,
-      title: 'Networking Opportunities',
-      description: 'Connect with industry experts, innovators, and fellow tech enthusiasts from across the nation.'
     },
     {
       icon: Target,
