@@ -4,65 +4,11 @@ import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'luc
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container">
-        <div className="footer-content">
-          {/* Left Section */}
-          <div className="footer-section">
-            <div className="footer-logo">
-              <div className="logo-content">
-                <div className="logo-icon">C25</div>
-                <div className="logo-text">
-                  <span className="logo-title">Consortium 2025</span>
-                  <span className="logo-subtitle">IARE College</span>
-                </div>
-              </div>
-            </div>
-            <p className="footer-description">
-              Join us for the most exciting tech consortium of 2025. Connect, learn, and innovate with the brightest minds in technology.
-            </p>
-            <div className="social-links">
-              <a href="#" className="social-link"><Facebook size={20} /></a>
-              <a href="#" className="social-link"><Twitter size={20} /></a>
-              <a href="#" className="social-link"><Instagram size={20} /></a>
-              <a href="#" className="social-link"><Linkedin size={20} /></a>
-            </div>
-          </div>
-
-          {/* Middle Section */}
-          <div className="footer-section">
-            <h3 className="footer-title">Quick Links</h3>
-            <div className="footer-links">
-              <Link to="/" className="footer-link">Home</Link>
-              <Link to="/events" className="footer-link">Events</Link>
-              <Link to="/about" className="footer-link">About Us</Link>
-              <Link to="/contact" className="footer-link">Contact</Link>
-            </div>
-          </div>
-
-          {/* Right Section */}
-          <div className="footer-section">
-            <h3 className="footer-title">Contact Info</h3>
-            <div className="contact-info">
-              <div className="contact-item">
-                <MapPin size={18} />
-                <span>IARE College, Dundigal, Hyderabad, Telangana 500043</span>
-              </div>
-              <div className="contact-item">
-                <Phone size={18} />
-                <span>+91 9876543210</span>
-              </div>
-              <div className="contact-item">
-                <Mail size={18} />
-                <span>consortium25.com</span>
-              </div>
-            </div>
-          </div>
-        </div>
+       
 
         <div className="footer-bottom">
           <p>&copy; 2025 Consortium 2025 - IARE College. All rights reserved.</p>
         </div>
-      </div>
 
       <style jsx>{`
         /* Base Styles */

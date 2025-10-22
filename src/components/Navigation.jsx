@@ -95,16 +95,13 @@ function Navigation() {
               alt="Consortium Logo"
               className="logo-img"
               style={{
-                width: '45px',
-                height: '45px',
+                width: '100px',
+                height: '100px',
                 objectFit: 'contain',
                 borderRadius: '8px',
               }}
             />
-            <div className="logo-text-container">
-              <div style={styles.logoText}>CONSORTIUM 2025</div>
-              <div style={styles.logoSubtext}>IARE National Level Technical Fest</div>
-            </div>
+           
           </Link>
 
           {/* Hamburger for small screens */}
