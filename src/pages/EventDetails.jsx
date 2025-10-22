@@ -904,6 +904,7 @@ function EventDetails() {
       color: '#00df9a',
       backgroundColor: 'rgba(0, 223, 154, 0.1)',
       padding: '10px 20px',
+        marginTop: '-20px',
       borderRadius: '10px',
     }}
   >
