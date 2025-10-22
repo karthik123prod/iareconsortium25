@@ -14,7 +14,7 @@ export default function IntroVideo() {
       });
 
       // Navigate to home after video ends
-      const handleEnded = () => navigate("/home");
+      const handleEnded = () => navigate("/");
       video.addEventListener("ended", handleEnded);
 
       return () => video.removeEventListener("ended", handleEnded);
