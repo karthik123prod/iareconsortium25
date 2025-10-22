@@ -21,6 +21,7 @@ function Navigation() {
       left: 0,
       width: '100%',
       background: 'rgba(10, 10, 25, 0.8)',
+      zIndex: 1000,
     },
     container: {
       maxWidth: '1300px',
@@ -78,133 +79,166 @@ function Navigation() {
       border: 'none',
       color: '#fff',
       cursor: 'pointer',
+      zIndex: 1002,
+      position: 'relative',
     },
   };
 
   return (
-    <nav style={styles.nav}>
-      <div style={styles.container}>
-        {/* Logo */}
-        <Link to="/" style={styles.logo}>
-          <img
-  src="/assets/logo.png"
-  alt="Consortium Logo"
-  style={{
-    width: '45px',
-    height: '45px',
-    objectFit: 'contain',
-    borderRadius: '8px',
-  }}
-/>
+    <>
+      <nav style={styles.nav}>
+        <div style={styles.container}>
+          {/* Logo */}
+          <Link to="/" style={styles.logo}>
+            <img
+              src="/assets/logo.png"
+              alt="Consortium Logo"
+              className="logo-img"
+              style={{
+                width: '45px',
+                height: '45px',
+                objectFit: 'contain',
+                borderRadius: '8px',
+              }}
+            />
+            <div className="logo-text-container">
+              <div style={styles.logoText}>CONSORTIUM 2025</div>
+              <div style={styles.logoSubtext}>IARE National Level Technical Fest</div>
+            </div>
+          </Link>
 
-          <div>
-            <div style={styles.logoText}>CONSORTIUM 2025</div>
-            <div style={styles.logoSubtext}>IARE National Level Technical Fest</div>
-          </div>
-        </Link>
+          {/* Hamburger for small screens */}
+          <button
+            style={styles.hamburger}
+            onClick={() => setIsOpen(!isOpen)}
+            className="hamburger-btn"
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
 
-        {/* Hamburger for small screens */}
-        <button
-          style={styles.hamburger}
-          onClick={() => setIsOpen(!isOpen)}
-          className="hamburger-btn"
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+          {/* Nav Links */}
+          <ul className={`nav-links ${isOpen ? 'active' : ''}`} style={styles.navLinks}>
+            {navItems.map((item) => {
+              const Icon = item.icon;
+              const isActive = location.pathname === item.path;
 
-        {/* Nav Links */}
-        <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
-          {navItems.map((item) => {
-            const Icon = item.icon;
-            const isActive = location.pathname === item.path;
+              return (
+                <li key={item.path}>
+                  <Link
+                    to={item.path}
+                    style={{
+                      ...styles.navLink,
+                      ...(isActive ? styles.navLinkActive : {}),
+                    }}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <Icon size={25} />
+                    {item.label}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
 
-            return (
-              <li key={item.path}>
-                <Link
-                  to={item.path}
-                  style={{
-                    ...styles.navLink,
-                    ...(isActive ? styles.navLinkActive : {}),
-                  }}
-                  onClick={() => setIsOpen(false)}
-                >
-                  <Icon size={25} />
-                  {item.label}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-
-      {/* Responsive CSS */}
-      <style jsx>{`
-        /* Default desktop view */
-        .hamburger-btn {
-          display: none;
-        }
-
-        .nav-links {
-          display: flex;
-          align-items: center;
-        }
-
-        /* Hover effect */
-        .nav-links a:hover {
-          color: #fff !important;
-          text-shadow: 0 0 10px rgba(168, 85, 247, 0.7);
-        }
-
-        /* Responsive below 900px */
-        @media (max-width: 900px) {
+        {/* Responsive CSS */}
+        <style>{`
+          /* Default desktop view */
           .hamburger-btn {
-            display: block !important;
+            display: none;
           }
 
           .nav-links {
-            position: fixed;
-            top: 0;
-            right: 0;
-            height: 100vh;
-            width: 70%;
-            background: rgba(15, 23, 42, 0.98);
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            transform: translateX(100%);
-            transition: transform 0.3s ease;
-            box-shadow: -4px 0 10px rgba(0, 0, 0, 0.4);
-          }
-
-          .nav-links.active {
-            transform: translateX(0);
-          }
-
-          .nav-links li {
-            width: 100%;
-            text-align: center;
-          }
-
-          .nav-links a {
-            font-size: 1.2rem !important;
             display: flex;
-            justify-content: center;
-          }
-        }
-
-        /* Smaller mobile phones */
-        @media (max-width: 480px) {
-          .nav-links {
-            width: 85%;
+            align-items: center;
           }
 
-          .logoText {
-            font-size: 20px !important;
+          /* Hover effect */
+          .nav-links a:hover {
+            color: #fff !important;
+            text-shadow: 0 0 10px rgba(168, 85, 247, 0.7);
           }
-        }
-      `}</style>
-    </nav>
+
+          /* Responsive below 900px */
+          @media (max-width: 900px) {
+            .hamburger-btn {
+              display: block !important;
+            }
+
+            /* Hide logo text on mobile */
+            .logo-text-container {
+              display: none;
+            }
+
+            /* Fixed logo size on mobile */
+            .logo-img {
+              width: 40px !important;
+              height: 40px !important;
+            }
+
+            .nav-links {
+              position: fixed;
+              top: 0;
+              right: 0;
+              height: 100vh;
+              width: 70%;
+              background: rgba(15, 23, 42, 0.98);
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: 2rem;
+              transform: translateX(100%);
+              transition: transform 0.3s ease;
+              box-shadow: -4px 0 10px rgba(0, 0, 0, 0.4);
+              z-index: 1001;
+            }
+
+            .nav-links.active {
+              transform: translateX(0);
+            }
+
+            .nav-links li {
+              width: 100%;
+              text-align: center;
+            }
+
+            .nav-links a {
+              font-size: 1.2rem !important;
+              display: flex;
+              justify-content: center;
+            }
+          }
+
+          /* Smaller mobile phones */
+          @media (max-width: 480px) {
+            .nav-links {
+              width: 85%;
+            }
+
+            .logo-img {
+              width: 80px !important;
+              height: 60px !important;
+            }
+          }
+        `}</style>
+      </nav>
+
+      {/* Overlay for mobile menu */}
+      {isOpen && (
+        <div
+          onClick={() => setIsOpen(false)}
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100vh',
+            background: 'rgba(0, 0, 0, 0.5)',
+            zIndex: 999,
+          }}
+        />
+      )}
+    </>
   );
 }
 
