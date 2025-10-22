@@ -153,7 +153,7 @@ const Contact = () => {
   }
 
   .contact-info-card {
-    background: blue;
+    background: white;
     padding: 2rem;
     border-radius: 16px;
     text-align: center;

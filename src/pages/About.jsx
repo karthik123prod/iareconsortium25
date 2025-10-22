@@ -291,7 +291,7 @@ function About() {
           </h2>
           <div style={styles.statsGrid}>
             <div style={styles.statCard}>
-              <div style={styles.statNumber}>20+</div>
+              <div style={styles.statNumber}>10+</div>
               <div style={styles.statLabel}>Technical Events</div>
             </div>
             <div style={styles.statCard}>
@@ -299,16 +299,8 @@ function About() {
               <div style={styles.statLabel}>Expected Participants</div>
             </div>
             <div style={styles.statCard}>
-              <div style={styles.statNumber}>₹5L+</div>
-              <div style={styles.statLabel}>Total Prize Money</div>
-            </div>
-            <div style={styles.statCard}>
-              <div style={styles.statNumber}>50+</div>
+              <div style={styles.statNumber}>100+</div>
               <div style={styles.statLabel}>Participating Colleges</div>
-            </div>
-            <div style={styles.statCard}>
-              <div style={styles.statNumber}>15+</div>
-              <div style={styles.statLabel}>Industry Experts</div>
             </div>
             <div style={styles.statCard}>
               <div style={styles.statNumber}>2</div>

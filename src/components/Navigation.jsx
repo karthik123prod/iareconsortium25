@@ -20,10 +20,7 @@ function Navigation() {
       top: 0,
       left: 0,
       width: '100%',
-      zIndex: 1000,
       background: 'rgba(10, 10, 25, 0.8)',
-      backdropFilter: 'blur(10px)',
-      borderBottom: '1px solid rgba(59,130,246,0.2)',
     },
     container: {
       maxWidth: '1300px',
@@ -40,14 +37,14 @@ function Navigation() {
       textDecoration: 'none',
     },
     logoText: {
-      fontSize: '26px',
+      fontSize: '30px',
       fontWeight: 'bold',
       background: 'linear-gradient(90deg, #3b82f6, #a855f7)',
       WebkitBackgroundClip: 'text',
       WebkitTextFillColor: 'transparent',
     },
     logoSubtext: {
-      fontSize: '12px',
+      fontSize: '16px',
       color: '#94a3b8',
       marginTop: '-4px',
     },
@@ -131,7 +128,7 @@ function Navigation() {
                   }}
                   onClick={() => setIsOpen(false)}
                 >
-                  <Icon size={18} />
+                  <Icon size={25} />
                   {item.label}
                 </Link>
               </li>

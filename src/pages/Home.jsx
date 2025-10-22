@@ -49,14 +49,14 @@ function Home() {
       WebkitBackgroundClip: 'text',
       WebkitTextFillColor: 'transparent',
       backgroundClip: 'text',
-      marginBottom: '20px',
+      marginBottom: '0px',
       textShadow: '0 0 60px rgba(59, 130, 246, 0.3)',
       animation: 'fadeInUp 1s ease-out',
     },
     subtitle: {
   fontSize: '32px',
   color: '#f1f5f9',
-  marginBottom: '15px',
+  marginBottom: '10px',
   fontWeight: '600',
   textShadow: '0 0 10px rgba(168, 85, 247, 0.6)',
   animation: 'fadeInUp 1.2s ease-out',
@@ -213,7 +213,7 @@ featuresRight: {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  marginRight: '0', // Remove excessive space
+  marginRight: '50', // Remove excessive space
   paddingRight: '10px'
 },
 
@@ -503,7 +503,7 @@ sideImage: {
       <section style={styles.stats}>
         <div style={styles.statsGrid}>
           <div style={styles.statCard}>
-            <div style={styles.statNumber}>20+</div>
+            <div style={styles.statNumber}>10+</div>
             <div style={styles.statLabel}>Technical Events</div>
           </div>
           <div style={styles.statCard}>
@@ -511,13 +511,13 @@ sideImage: {
             <div style={styles.statLabel}>Participants Expected</div>
           </div>
           <div style={styles.statCard}>
-            <div style={styles.statNumber}>₹5L+</div>
-            <div style={styles.statLabel}>Prize Pool</div>
-          </div>
-          <div style={styles.statCard}>
-            <div style={styles.statNumber}>50+</div>
+            <div style={styles.statNumber}>100+</div>
             <div style={styles.statLabel}>Colleges</div>
           </div>
+          <div style={styles.statCard}>
+              <div style={styles.statNumber}>2</div>
+              <div style={styles.statLabel}>Days of Innovation</div>
+            </div>
         </div>
       </section>
     </div>

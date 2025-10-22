@@ -85,7 +85,6 @@ function EventDetails() {
       title: 'WebNova - Igniting the Future Web',
       category: 'Webathon',
       date: 'October 31 - November 01, 2025',
-      time: '9:00 AM - 6:00 PM',
       participants: '2-4 per team',
       registrationFee: '300',
       pdf: '/docs/Webathon.pdf',
@@ -127,7 +126,6 @@ function EventDetails() {
       title: 'House of Echoes - The evidence isn’t in blood — it’s in bytes',
       category: 'Cyber Security',
       date: 'October 31 - November 01, 2025',
-      time: '10:00 AM - 5:00 PM',
       participants: 'Max 3 members per team',
       registrationFee: '149',
       pdf: '/docs/Cyber Security.pdf',
@@ -170,12 +168,11 @@ function EventDetails() {
       title: 'Techno Hunt - Divide And Conquer Beyond Your Limits',
       category: 'Treasure Hunt',
       date: 'October 31 - November 01, 2025',
-      time: '11:00 AM - 4:00 PM',
       participants: '4 per team',
       registrationFee: '200',
       pdf: '/docs/Treasure Hunt.pdf',
-      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      description: 'Get ready to ignite your inner tech explorer in “Decode & Conquer”, a thrilling 2-day technical treasure hunt that blends brainpower, coding, and adventure! This isn’t your average hunt — it’s a high-energy quest where each clue challenges your logic, coding skills, and teamwork.',
+      image: 'https://img.freepik.com/free-photo/flat-lay-hand-holding-magnifying-glass_23-2149617673.jpg?semt=ais_incoming&w=740&q=80',
+      description: 'Get ready to ignite your inner tech explorer in “Decode & Conquer”, a thrilling 2-day technical treasure hunt that blends brainpower, coding, and adventure! This isn’t your average hunt — it’s a high-energy quest where each clue challenges your logic, coding skills, and teamwork, pushing you to think smarter and faster at every stage.',
       detailedDescription: 'A thrilling 2-day technical treasure hunt that blends brainpower, coding, and adventure! This isn’t your average hunt — it’s a high-energy quest where each clue challenges your logic, coding skills, and teamwork.',
       rules: [
         'Team size: 4 members',
@@ -185,16 +182,17 @@ function EventDetails() {
         'The registration fee is 200/- per team.'
       ],
       themes: [
-        'Not yet given.'
+        'Tech + Adventure',
+        'Coding + Mystery Solving',
+        'Treasure Hunt + Real-Time Strategy',
+        'Teamwork + Competition'
       ],
       guidelines: [
-        'Bring laptops with ML frameworks pre-installed',
-        'Anaconda or Jupyter Notebook recommended',
-        'Internet available for library downloads',
-        'Presentation of results and methodology mandatory',
-        'Evaluation based on accuracy, approach, and innovation',
-        'Judges decision is final',
-        'Time limit: 5 hours'
+        'Teams must follow the instructions of coordinators  throughout the event.',
+        'Clue sharing between teams is strictly prohibited.',
+        'Judges’ and organizers’ decisions are final and binding.',
+        'Fair play is mandatory – any form of cheating, plagiarism, or unfair assistance will lead to disqualification',
+        'Judges decision is final'
       ],
       abstract: [
         'The event unfolds in two intense phases:',
@@ -207,7 +205,6 @@ function EventDetails() {
       title: 'AquaStruct - The Concrete Canoe Challenge',
       category: 'Concrete Canoe',
       date: 'October 31 - November 01, 2025',
-      time: '9:00 AM - 3:00 PM',
       participants: '1-5 per team',
       registrationFee: '300',
       pdf: '/docs/Concrete Canoe.pdf',
@@ -245,7 +242,6 @@ function EventDetails() {
       title: 'EngiVision - Imagine. Innovate. Inspire.',
       category: 'Poster Presentation',
       date: 'October 31 - November 01, 2025',
-      time: '10:00 AM - 4:00 PM',
       participants: '3-4 per team',
       registrationFee: '200',
       pdf: '/docs/Poster Presentation.pdf',
@@ -277,11 +273,10 @@ function EventDetails() {
       title: 'VisionX - Unleash the power within your ideas',
       category: 'Project Expo',
       date: 'October 31 - November 01, 2025',
-      time: '2:00 PM - 4:00 PM',
       participants: '3 members per team',
       registrationFee: '300',
       pdf: '/docs/Project Expo.pdf',
-      image: 'https://news.kiit.ac.in/wp-content/uploads/2022/07/PROJECT-EXPO-2022-Day-2-750x430.jpg',
+      image: 'https://ahduni.edu.in/site/assets/files/30284/1600_x_900_dim_expo.1600x0.1400x0.webp',
       description: 'VisionX is a Project Expo that showcases innovative projects from all engineering departments, promoting creativity, teamwork, and practical learning while encouraging interdisciplinary collaboration and real-world problem-solving.  ',
       detailedDescription: 'A comprehensive quiz covering programming, technology trends, innovations, and general tech awareness. Multiple rounds with increasing difficulty.',
       rules: [
@@ -310,7 +305,6 @@ function EventDetails() {
       title: 'BattleLAN - Link up. Lock in. Light it up',
       category: 'LAN Gaming',
       date: 'October 31 - November 01, 2025',
-      time: '11:00 AM - 2:00 PM',
       participants: '3 - 4 members per team ',
       registrationFee: '200',
       pdf: '/docs/LAN Gaming.pdf',
@@ -347,11 +341,10 @@ function EventDetails() {
   ]
     },
     'Short Film':{
-      id: 'Short Film ',
+      id: 'Short Film',
       title: 'Short Film Contest - Frames of Vision, Tales of Heart',
       category: 'Short Film',
       date: 'October 31 - November 01, 2025',
-      time: '2:00 PM - 4:00 PM',
       participants: 'max 5 members per team',
       registrationFee: '249',
       pdf: '/docs/Short Film.pdf',
@@ -384,7 +377,6 @@ function EventDetails() {
       title: 'Photography Contest - Frames of Vision, Tales of Heart',
       category: 'Photography',
       date: 'October 31 - November 01, 2025',
-      time: '2:00 PM - 4:00 PM',
       participants: 'max 5 members per team',
       registrationFee: '99',
       pdf: '/docs/Photography.pdf',
@@ -416,7 +408,6 @@ function EventDetails() {
       title: 'Technical Paper Presentation',
       category: 'Paper-Presentation',
       date: 'October 31 - November 01, 2025',
-      time: '9:00 AM - 1:00 PM',
       participants: '2-3 per team',
       registrationFee: '200',
       pdf: '/docs/Paper-Presentation.pdf',
@@ -424,24 +415,26 @@ function EventDetails() {
       description: 'The Technical Paper Presentation is an event designed to encourage students and professionals to explore, research, and present innovative ideas in various fields of technology and science. Participants prepare and present a paper on a technical topic of their choice—ranging from cutting-edge innovations, case studies, or theoretical research—to demonstrate their knowledge, analytical skills, and creativity.',
       detailedDescription: 'The Technical Paper Presentation provides a platform for students and researchers to present their work on emerging technologies and innovations. Present your research, get valuable feedback from industry experts and academicians, and compete for exciting prizes. Topics span across all domains of technology.',
       rules: [
-        'Team size: 2-3 members',
-        'Original research is required',
-        'Plagiarism strictly prohibited',
-        '15 minutes presentation + 5 min Q&A',
-        'PPT format mandatory'
+        'Each team can have a maximum of 3 participants.',
+        'The topic of the paper must be related to the themes mentioned below in the details pdf.',
+        'Each team will get 8 minutes to present followed by 2 minutes for Q&A.',
+        'Papers with >20% similarity (checked via plagiarism tools) will be disqualified.',
+        'Participants must carry a college ID card and proof of registration on the day of the event.'
       ],
       themes: [
-        'There are several themes and topics under paper presetation, These themes will be given in the pdf attached below'
+        'There are different topics under each branch/domain, These themes will be given in Details Pdf attached below',
       ],
       guidelines: [
         'Follow IEEE paper format',
-        'Submit abstract first',
-        'Bring presentation on USB',
-        'Dress code: Formal',
-        'Technical depth evaluated'
+        'Bring Laptops for presentation purpose',
+        'Paper length should not exceed 6 pages including references.'
       ],
       abstract: [
-        'Not yet given'
+        'Paper Review: Submitted papers are screened for originality, relevance, and proper formatting.',
+        'Technical Assessment: Judges evaluate the technical depth, innovation, and practical significance of the work.',
+        'Presentation Evaluation: Participants are assessed on clarity, confidence, slide design, and time management.',
+        'Q&A Session: Judges test the participants’ understanding and ability to defend their ideas.',
+        'Final Scoring: Scores from all judges are compiled, and winners are decided based on overall performance.'
       ]
     },
     'Cyber Crime': {
@@ -449,7 +442,6 @@ function EventDetails() {
       title: 'Murder Mystery – One Crime. A Hundred Suspects. One Winner',
       category: 'Cyber Crime',
       date: 'October 31 - November 01, 2025',
-      time: '9:00 AM - 6:00 PM',
       participants: 'Max 3 members per team',
       registrationFee: '200',
       pdf: '/docs/Cyber Crime.pdf',
@@ -469,7 +461,7 @@ function EventDetails() {
         'Reimagine Commerce/Finance — AI-driven innovations for industrial/private sector trade, finance, or personalized commerce.'
       ],
       guidelines: [
-        'RAttention to clues, evidence collection, and logical reasoning will be part of the evaluation criteria.',
+        'Attention to clues, evidence collection, and logical reasoning will be part of the evaluation criteria.',
         'Logical justification of every conclusion drawn will be essential; baseless guesses or random assumptions will not be considered valid. ',
         'Attention to minor details and careful sequencing of events will be advantageous in uncovering the true culprit. ',
         'Integrity and fair play are expected from all participants; any form of external assistance or disruption to other teams will lead to disqualification. ',
@@ -486,8 +478,76 @@ function EventDetails() {
         'Beyond the thrill of solving the mystery, Murder Mystery emphasizes teamwork, communication, and strategic problem-solving. ',
         'As time runs out and suspicion grows, only the most perceptive minds will see through the chaos. ',
         'In this battle of wit and instinct, one team will stand above all — uncovering the truth behind the crime. '
-      ]
+      ],
     },
+      'AeroExpo': {
+      id: 'AeroExpo',
+      title: 'AERO EXPO - The sky is not the limit, it’s just the beginning',
+      category: 'AeroExpo',
+      date: 'October 31 - November 01, 2025',
+      participants: 'Max 3 members per team',
+      registrationFee: '400',
+      pdf: '/AeroExpo.pdf',
+      image: 'https://www.virtual-fly.com/wp-content/uploads/AERO-2.png',
+      description: 'The Aero Expo is a flagship exhibition dedicated to showcasing innovative models, working prototypes, and detailed exhibits related to Aerospace Engineering, Aviation technology, and related disciplines. This is a non-competitive exhibition designed to foster learning, discussion, and inspiration among students and faculty.',
+      detailedDescription:' Participants are encouraged to present their models, research posters, and demonstrations that explain complex concepts in an accessible and engaging way. ',
+      rules: [
+        'Maximum Team Size: Three members per team.',
+	      'Registration Fee: ₹400 per team (This event is considered a premium, high-effort showcase).',
+        
+      ],
+      themes: [
+        'Participants can choose their own theme.',
+      ],
+      guidelines: [
+        'Exhibit Type: Exhibits can include scale models, working prototypes, simulation demonstrations, or detailed research displays.',
+        'Setup: Teams are responsible for bringing all necessary materials, display boards, power adapters, and protective measures for their exhibit. Limited power supply will be available.', 
+        'Content: Exhibits should include a concise title, objectives, methodology, and key findings/innovations clearly labeled.',
+        'Safety: All prototypes and exhibits must adhere to strict safety guidelines. No live combustion or hazardous materials are permitted. Organizers reserve the right to remove unsafe exhibits.', 
+        'Timing: Teams must complete setup by the deadline provided by the coordinators.',
+        'Staffing: At least one team member must be present at the exhibit during all designated expo hours to interact with visitors and judges.'
+      ],
+      abstract: [
+        'Model Quality  & Engineering- Focuses on details, craftsmanship, and feasibility of the design. ',
+        'Technical Explanation - Focuses on clarity and depth of explanation provided by the team members to visitors. ',
+        'Innovation  & Relevance - Novelty of the concept and its significance to modern aerospace/aviation challenges.',
+        'Presentation - Overall professional quality of the display area and materials. '      
+      ],
+    },
+
+    'RC Simulator': {
+      id: 'RC Simulator',
+      title: 'RC Simulator - The sky is not the limit, it’s just the beginning',
+      category: 'RC Simulator',
+      date: 'October 31 - November 01, 2025',
+      participants: 'Max 3 members per team',
+      registrationFee: '300',
+      pdf: '/docs/RC Simulator.pdf',
+      image: 'https://play-lh.googleusercontent.com/2rzvThYF9et3nXIr0m04iTOy54IdRWBpwvMxc6oHWqRHRop6Jm8nMKA1Am5s7lRLbR0=w526-h296-rw',
+      description: 'The RC Simulator event tests participants’ piloting precision and control in a virtual environment. It evaluates flight maneuverability, quick decision-making, and understanding of aerodynamics.Competitors navigate a set course or perform complex aerial tasks.The event uses professional-grade flight simulation software.',
+      detailedDescription: ' Competitors will navigate a pre-defined course or complete a series of challenging tasks using professional-grade flight simulation software.',
+      rules: [
+        'Maximum Team Size: Three members per team.',
+	      'Registration Fee: ₹300 per team ',
+        
+      ],
+      themes: [
+        'Participants can choose their own theme.',
+      ],
+      guidelines: [
+        'Equipment: Participants will use the simulator equipment provided by the organizers. ',
+        'Rounds: The competition will consist of three rounds.  ', 
+        'Scoring: Scoring will primarily be based on completion time, accuracy, and adherence to virtual flight path constraints. Penalties will be applied for crashes or boundary violations. Takeoff and landing precision will also be taken into consideration for final evaluation.',
+        'Fair Play: Any attempt to manipulate the software or hardware will result in immediate disqualification. ', 
+        'Timing: Participants should report 30 minutes before their scheduled slot. ',
+        'Judges Decision: The judges decision regarding scores and disqualifications will be final and binding. '
+      ],
+      abstract: [
+        'Precision and Control - Focuses on accuracy of flight maneuvers and smooth control inputs.',
+        'Time Efficiency  - Focuses on Fastest time taken to successfully complete the defined course.',
+        'Damage/Penalty Avoidance  - Minimal crashes or violations of simulation boundaries. '    
+      ],
+    }
   };
 
   const event = eventsData[eventId];
@@ -525,9 +585,10 @@ function EventDetails() {
     backButtonContainer: {
   width: '100%',
   display: 'flex',
-  justifyContent: 'flex-start', // keep it on the left
-  padding: '20px 80px',         // space below navbar
-  marginTop: '80px',            // adjust if navbar overlaps
+  justifyContent: 'flex-start', 
+  padding: '20px 80px',        
+  marginTop: '80px', 
+  marginLeft: '-80px',          
   zIndex: 5,
   position: 'relative',
 },
@@ -695,7 +756,6 @@ backButton: {
             <span style={styles.category}>{event.category}</span>
             <h1 style={styles.title}>{event.title}</h1>
             <p style={styles.description}>{event.detailedDescription}</p>
-
             <div style={styles.infoGrid}>
               <div style={styles.infoCard}>
                 <Calendar size={24} color="#3b82f6" style={styles.infoIcon} />
@@ -703,12 +763,7 @@ backButton: {
                   <div style={styles.infoText}>{event.date}</div>
                 </div>
               </div>
-              <div style={styles.infoCard}>
-                <Clock size={24} color="#3b82f6" style={styles.infoIcon} />
-                <div>
-                  <div style={styles.infoText}>{event.time}</div>
-                </div>
-              </div>
+             
               <div style={styles.infoCard}>
                 <Users size={24} color="#3b82f6" style={styles.infoIcon} />
                 <div>
@@ -818,6 +873,7 @@ backButton: {
       color: '#00df9a',
       backgroundColor: 'rgba(0, 223, 154, 0.1)',
       padding: '10px 20px',
+      marginLeft: '-40px',
       borderRadius: '10px',
     }}
   >
@@ -832,6 +888,7 @@ backButton: {
       background: 'linear-gradient(90deg, #16a34a, #22c55e)',
       color: '#fff',
       padding: '12px 26px',
+      marginLeft: '-50px',
       borderRadius: '10px',
       fontSize: '16px',
       fontWeight: 'bold',
@@ -843,7 +900,7 @@ backButton: {
     onMouseOver={(e) => (e.target.style.background = 'linear-gradient(90deg, #15803d, #16a34a)')}
     onMouseOut={(e) => (e.target.style.background = 'linear-gradient(90deg, #16a34a, #22c55e)')}
   >
-    📄 Download PDF
+     View more Details
   </a>
 
   {/* Register Button (Right side) */}
@@ -855,6 +912,7 @@ backButton: {
       background: 'linear-gradient(90deg, #3b82f6, #60a5fa)',
       color: '#fff',
       padding: '12px 26px',
+      marginRight: '-40px',
       borderRadius: '10px',
       fontSize: '16px',
       fontWeight: 'bold',
