@@ -1,6 +1,7 @@
 import { Calendar, Users, Trophy, Zap, Target, Rocket } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import background from '/src/assests/background.jpg';
+import logo from '/src/assests/logo.png';
 
 function Home() {
   const styles = {
@@ -332,7 +333,7 @@ sideImage: {
           </p>
           <div style={styles.dateBox}>
             <Calendar size={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '10px' }} />
-            October 31-November 1, 2025
+            October 31-November 01, 2025
           </div>
           <div style={styles.ctaButtons}>
             <Link to="/register" style={{ ...styles.ctaButton, ...styles.ctaPrimary }}>
@@ -426,26 +427,72 @@ sideImage: {
 
   {/* Responsive Layout Fix */}
   <style>
-    {`
-      @media (max-width: 900px) {
-        .featuresWrapper {
-          flex-direction: column;
-          text-align: center;
-          gap: 40px;
-        }
-        .featuresRight {
-          order: -1;
-          margin-bottom: 30px;
-        }
-        .featuresLeft {
-          width: 100%;
-        }
-        .featuresRight img {
-          width: 100% !important; /* ✅ Image scales down on small screens */
-        }
-      }
-    `}
-  </style>
+{`
+  /* Responsive Adjustments Without Changing Layout */
+
+  /* Medium Screens (Tablets) */
+  @media (max-width: 1024px) {
+    h1 { font-size: 56px !important; }
+    h2 { font-size: 28px !important; }
+    p { font-size: 18px !important; }
+
+    .featuresWrapper {
+      gap: 40px !important;
+    }
+
+    .featuresRight img {
+      max-width: 400px !important;
+    }
+  }
+
+  /* Small Screens (Mobiles) */
+  @media (max-width: 768px) {
+    h1 { font-size: 42px !important; }
+    h2 { font-size: 24px !important; }
+    p { font-size: 16px !important; }
+
+    .featuresWrapper {
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+      gap: 30px !important;
+    }
+
+    .featuresRight {
+      order: -1 !important;
+      margin-bottom: 20px !important;
+    }
+
+    .featuresRight img {
+      width: 90% !important;
+      max-width: 350px !important;
+    }
+
+    .ctaButtons {
+      flex-direction: column !important;
+      gap: 15px !important;
+    }
+
+    .dateBox {
+      font-size: 18px !important;
+      padding: 12px 25px !important;
+    }
+  }
+
+  /* Very Small Screens (Phones < 500px) */
+  @media (max-width: 500px) {
+    h1 { font-size: 32px !important; }
+    h2 { font-size: 20px !important; }
+    p { font-size: 15px !important; }
+
+    .featuresRight img {
+      width: 100% !important;
+      max-width: 300px !important;
+    }
+  }
+`}
+</style>
+
 </section>
 
 

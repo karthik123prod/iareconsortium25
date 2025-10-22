@@ -1,18 +1,91 @@
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, Users, MapPin, IndianRupee, Trophy, Clock, ArrowLeft, UserPlus, CheckCircle, AlertCircle } from 'lucide-react';
 import background from '/src/assests/background.jpg';
+import './EventDetails.css';
+
 
 function EventDetails() {
   const { eventId } = useParams();
+<style>
+{`
+  @media (max-width: 1024px) {
+    .heroImage {
+      height: 300px !important;
+    }
+    .heroContent {
+      padding: 25px !important;
+    }
+    .title {
+      font-size: 32px !important;
+    }
+    .description {
+      font-size: 16px !important;
+    }
+    .section {
+      padding: 25px !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .heroImage {
+      height: 250px !important;
+    }
+    .title {
+      font-size: 28px !important;
+    }
+    .infoGrid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+      gap: 12px !important;
+    }
+    .registerButton {
+      width: 100% !important;
+      justify-content: center;
+      padding: 14px 0 !important;
+    }
+    .sectionTitle {
+      font-size: 22px !important;
+    }
+    .sectionContent,
+    .listItem {
+      font-size: 15px !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .heroImage {
+      height: 200px !important;
+    }
+    .title {
+      font-size: 22px !important;
+    }
+    .description {
+      font-size: 14px !important;
+    }
+    .infoGrid {
+      grid-template-columns: 1fr !important;
+      gap: 10px !important;
+    }
+    .section {
+      padding: 18px !important;
+    }
+    .sectionTitle {
+      font-size: 20px !important;
+    }
+    .registerButton {
+      font-size: 16px !important;
+      padding: 12px !important;
+    }
+  }
+`}
+</style>
 
   const eventsData = {
     'Webathon': {
       id: 'Webathon',
       title: 'WebNova - Igniting the Future Web',
       category: 'Webathon',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '9:00 AM - 6:00 PM',
-      venue: 'Main Auditorium',
       participants: '2-4 per team',
       registrationFee: '300',
       pdf: '/docs/Webathon.pdf',
@@ -53,9 +126,8 @@ function EventDetails() {
       id: 'Cyber Security',
       title: 'House of Echoes - The evidence isn’t in blood — it’s in bytes',
       category: 'Cyber Security',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '10:00 AM - 5:00 PM',
-      venue: 'Robotics Arena',
       participants: 'Max 3 members per team',
       registrationFee: '149',
       pdf: '/docs/Cyber Security.pdf',
@@ -97,9 +169,8 @@ function EventDetails() {
       id: 'Treasure Hunt',
       title: 'Techno Hunt - Divide And Conquer Beyond Your Limits',
       category: 'Treasure Hunt',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '11:00 AM - 4:00 PM',
-      venue: 'Computer Lab - Block A',
       participants: '4 per team',
       registrationFee: '200',
       pdf: '/docs/Treasure Hunt.pdf',
@@ -135,9 +206,8 @@ function EventDetails() {
       id: 'Concrete Canoe',
       title: 'AquaStruct - The Concrete Canoe Challenge',
       category: 'Concrete Canoe',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '9:00 AM - 3:00 PM',
-      venue: 'IT Lab - Block B',
       participants: '1-5 per team',
       registrationFee: '300',
       pdf: '/docs/Concrete Canoe.pdf',
@@ -174,9 +244,8 @@ function EventDetails() {
       id: 'Poster Presentation',
       title: 'EngiVision - Imagine. Innovate. Inspire.',
       category: 'Poster Presentation',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '10:00 AM - 4:00 PM',
-      venue: 'Electronics Lab',
       participants: '3-4 per team',
       registrationFee: '200',
       pdf: '/docs/Poster Presentation.pdf',
@@ -207,9 +276,8 @@ function EventDetails() {
       id: 'Project Expo',
       title: 'VisionX - Unleash the power within your ideas',
       category: 'Project Expo',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '2:00 PM - 4:00 PM',
-      venue: 'Seminar Hall',
       participants: '3 members per team',
       registrationFee: '300',
       pdf: '/docs/Project Expo.pdf',
@@ -241,9 +309,8 @@ function EventDetails() {
       id: 'LAN Gaming',
       title: 'BattleLAN - Link up. Lock in. Light it up',
       category: 'LAN Gaming',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '11:00 AM - 2:00 PM',
-      venue: 'Innovation Lab',
       participants: '3 - 4 members per team ',
       registrationFee: '200',
       pdf: '/docs/LAN Gaming.pdf',
@@ -283,9 +350,8 @@ function EventDetails() {
       id: 'Short Film ',
       title: 'Short Film Contest - Frames of Vision, Tales of Heart',
       category: 'Short Film',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '2:00 PM - 4:00 PM',
-      venue: 'Seminar Hall',
       participants: 'max 5 members per team',
       registrationFee: '249',
       pdf: '/docs/Short Film.pdf',
@@ -317,9 +383,8 @@ function EventDetails() {
       id: 'Photography',
       title: 'Photography Contest - Frames of Vision, Tales of Heart',
       category: 'Photography',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '2:00 PM - 4:00 PM',
-      venue: 'Seminar Hall',
       participants: 'max 5 members per team',
       registrationFee: '99',
       pdf: '/docs/Photography.pdf',
@@ -350,9 +415,8 @@ function EventDetails() {
       id: 'paper-presentation',
       title: 'Technical Paper Presentation',
       category: 'Paper-Presentation',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '9:00 AM - 1:00 PM',
-      venue: 'Conference Hall',
       participants: '2-3 per team',
       registrationFee: '200',
       pdf: '/docs/Paper-Presentation.pdf',
@@ -384,9 +448,8 @@ function EventDetails() {
       id: 'Cyber Crime',
       title: 'Murder Mystery – One Crime. A Hundred Suspects. One Winner',
       category: 'Cyber Crime',
-      date: 'October 30 - 31, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '9:00 AM - 6:00 PM',
-      venue: 'Main Auditorium',
       participants: 'Max 3 members per team',
       registrationFee: '200',
       pdf: '/docs/Cyber Crime.pdf',
@@ -626,7 +689,6 @@ backButton: {
         </Link>
         </div>
         
-
         <div style={styles.hero}>
           <img src={event.image} alt={event.title} style={styles.heroImage} />
           <div style={styles.heroContent}>
@@ -645,12 +707,6 @@ backButton: {
                 <Clock size={24} color="#3b82f6" style={styles.infoIcon} />
                 <div>
                   <div style={styles.infoText}>{event.time}</div>
-                </div>
-              </div>
-              <div style={styles.infoCard}>
-                <MapPin size={24} color="#3b82f6" style={styles.infoIcon} />
-                <div>
-                  <div style={styles.infoText}>{event.venue}</div>
                 </div>
               </div>
               <div style={styles.infoCard}>

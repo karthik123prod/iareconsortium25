@@ -225,19 +225,88 @@ function Register() {
   return (
     <div style={styles.container}>
       <style>
-        {`
-          @keyframes slideIn {
-            from {
-              opacity: 0;
-              transform: translateY(-20px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-        `}
-      </style>
+  {`
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 📱 Responsive design for tablets & phones */
+    @media (max-width: 1024px) {
+      div[style*="max-width: 700px"] {
+        max-width: 90% !important;
+        padding: 20px !important;
+      }
+
+      h1[style] {
+        font-size: 38px !important;
+      }
+
+      p[style] {
+        font-size: 16px !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      form {
+        padding: 25px !important;
+      }
+
+      input, select {
+        font-size: 14px !important;
+        padding: 12px !important;
+      }
+
+      label {
+        font-size: 14px !important;
+      }
+
+      button {
+        font-size: 16px !important;
+        padding: 14px !important;
+      }
+
+      h1[style] {
+        font-size: 32px !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      form {
+        padding: 20px !important;
+      }
+
+      input, select {
+        font-size: 13px !important;
+      }
+
+      button {
+        width: 100% !important;
+        font-size: 15px !important;
+        padding: 12px !important;
+      }
+
+      div[style*="gap: 25px"] {
+        gap: 15px !important;
+      }
+
+      h1[style] {
+        font-size: 28px !important;
+      }
+
+      p[style] {
+        font-size: 14px !important;
+      }
+    }
+  `}
+</style>
+
 
       <div style={styles.header}>
         <h1 style={styles.title}>Register Now</h1>

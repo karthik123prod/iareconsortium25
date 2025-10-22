@@ -7,9 +7,8 @@ function Events() {
       id: 'paper-presentation',
       title: 'Technical Paper Presentation-Where Ideas Meet Innovation.',
       category: 'Paper Presentation',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '9:00 AM - 1:00 PM',
-      venue: 'Conference Hall',
       participants: '2-3 per team',
       registrationFee: '200',
       image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -21,9 +20,8 @@ function Events() {
       id: 'Webathon',
       title: 'WebNova - Igniting the Future Web',
       category: 'Webathon',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '9:00 AM - 6:00 PM',
-      venue: 'Main Auditorium',
       participants: '2-4 per team',
       registrationFee: '300',
       image: 'https://media.deloitte.com/is/image/deloitte/800-600-governance-privacy',
@@ -35,9 +33,8 @@ function Events() {
       id: 'Project Expo',
       title: 'VisionX - Unleash the power within your ideas',
       category: 'Project Expo',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '2:00 PM - 4:00 PM',
-      venue: 'Seminar Hall',
       participants: '3 members per team',
       registrationFee: '300',
       image: 'https://news.kiit.ac.in/wp-content/uploads/2022/07/PROJECT-EXPO-2022-Day-2-750x430.jpg',
@@ -49,9 +46,8 @@ function Events() {
        id: 'LAN Gaming',
       title: 'BattleLAN - Link up. Lock in. Light it up',
       category: 'LAN Gaming',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '11:00 AM - 2:00 PM',
-      venue: 'Innovation Lab',
       participants: '3 - 4 members per team ',
       registrationFee: '200',
       image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -63,9 +59,8 @@ function Events() {
       id: 'Cyber Security',
       title: 'House of Echoes - The evidence isn’t in blood — it’s in bytes',
       category: 'Cyber Security',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '10:00 AM - 5:00 PM',
-      venue: 'Robotics Arena',
       participants: '2-3 members per team',
       registrationFee: '149',
       image: 'https://media.licdn.com/dms/image/v2/D4E22AQFMT-L7TDcxWw/feedshare-shrink_800/feedshare-shrink_800/0/1703223822931?e=2147483647&v=beta&t=gSRHA81ogxul4Ax6JaAfNw-EpkpOIRS3Oz_dejAstz8',
@@ -77,9 +72,8 @@ function Events() {
       id: 'Treasure Hunt',
       title: 'Techno Hunt - Divide And Conquer Beyond Your Limits',
       category: 'Treasure Hunt',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '11:00 AM - 4:00 PM',
-      venue: 'Computer Lab - Block A',
       participants: '4 members per team',
       registrationFee: '200',
       image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -91,9 +85,8 @@ function Events() {
       id: 'Cyber Crime',
       title: 'Murder Mystery – One Crime. A Hundred Suspects. One Winner',
       category: 'Cyber Crime',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '9:00 AM - 6:00 PM',
-      venue: 'Main Auditorium',
       participants: 'Max 3 members per team',
       registrationFee: '200',
       image: 'https://i.pinimg.com/1200x/2f/7e/3d/2f7e3dee2cf9e452805ddc58cce5b380.jpg',
@@ -105,9 +98,8 @@ function Events() {
       id: 'Concrete Canoe',
       title: 'AquaStruct - The Concrete Canoe Challenge',
       category: 'Concrete Canoe',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '9:00 AM - 3:00 PM',
-      venue: 'IT Lab - Block B',
       participants: '1-5 members per team',
       registrationFee: '300',
       image: 'https://viterbischool.usc.edu/wp-content/uploads/2025/05/concrete-canoe.jpg',
@@ -119,9 +111,8 @@ function Events() {
       id: 'Poster Presentation',
       title: 'EngiVision - Imagine. Innovate. Inspire.',
       category: 'Poster Presentation',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '10:00 AM - 4:00 PM',
-      venue: 'Electronics Lab',
       participants: '3-4 members per team',
       registrationFee: '200',
       image: 'https://i.pinimg.com/1200x/00/ea/38/00ea385888c8fcf08c4f3c3ecbb39a5f.jpg',
@@ -133,9 +124,8 @@ function Events() {
       id: 'Short Film',
       title: 'Short Film Contest - Frames of Vision, Tales of Heart',
       category: 'Short Film',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '2:00 PM - 4:00 PM',
-      venue: 'Seminar Hall',
       participants: 'max 5 members per team',
       registrationFee: '249',
       image: 'https://sofy.tv/blog/wp-content/uploads/2018/01/1-41-1200x675.jpg',
@@ -147,9 +137,8 @@ function Events() {
       id: 'Photography',
       title: 'Photography Contest - Frames of Vision, Tales of Heart',
       category: 'Photography',
-      date: 'October 31 - November 1, 2025',
+      date: 'October 31 - November 01, 2025',
       time: '2:00 PM - 4:00 PM',
-      venue: 'Seminar Hall',
       participants: 'max 5 members per team',
       registrationFee: '99',
       image: 'https://www.adorama.com/alc/wp-content/uploads/2021/04/photography-camera-learning-feature.jpg',
@@ -360,6 +349,83 @@ function Events() {
           </div>
         ))}
       </div>
+      <style>
+{`
+  /* ---------- Responsive Design ---------- */
+
+  /* Tablets (<= 1024px) */
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 44px !important;
+    }
+    p {
+      font-size: 18px !important;
+    }
+    .eventsGrid {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+      gap: 20px !important;
+    }
+    .eventCard img {
+      height: 200px !important;
+    }
+  }
+
+  /* Mobile (<= 768px) */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 36px !important;
+    }
+    p {
+      font-size: 16px !important;
+    }
+    .eventsGrid {
+      grid-template-columns: 1fr !important;
+      gap: 18px !important;
+    }
+    .eventCard {
+      margin: 0 auto !important;
+      width: 95% !important;
+    }
+    .eventCard img {
+      height: 180px !important;
+    }
+    .eventContent {
+      padding: 20px !important;
+    }
+    .eventTitle {
+      font-size: 20px !important;
+    }
+    .eventDescription {
+      font-size: 14px !important;
+    }
+    .eventDetails {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+    }
+    .eventActions {
+      flex-direction: column !important;
+    }
+    .eventActions a {
+      width: 100% !important;
+      text-align: center !important;
+    }
+  }
+
+  /* Small Mobile (<= 480px) */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 30px !important;
+    }
+    p {
+      font-size: 14px !important;
+    }
+    .eventCard img {
+      height: 160px !important;
+    }
+  }
+`}
+</style>
+
     </div>
   );
 }
