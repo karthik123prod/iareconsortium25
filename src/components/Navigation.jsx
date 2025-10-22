@@ -9,7 +9,6 @@ function Navigation() {
   const navItems = [
     { path: '/', label: 'Home', icon: Home },
     { path: '/events', label: 'Events', icon: Calendar },
-    { path: '/register', label: 'Register', icon: UserPlus },
     { path: '/about', label: 'About', icon: Info },
     { path: '/contact', label: 'Contact', icon: Mail },
   ];
