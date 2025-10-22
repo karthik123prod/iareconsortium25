@@ -436,8 +436,8 @@ function EventDetails() {
         'Judged on Creativity, Composition, Originality, and Technical Quality.'
       ]
     },
-    'paper-presentation': {
-      id: 'paper-presentation',
+    'Paper-Presentation': {
+      id: 'Paper-Presentation',
       title: 'Technical Paper Presentation',
       category: 'Paper-Presentation',
       date: 'October 31 - November 01, 2025',
