@@ -443,7 +443,7 @@ function EventDetails() {
       date: 'October 31 - November 01, 2025',
       participants: '2-3 per team',
       registrationFee: '200',
-      pdf: '/docs/Paper-Presentation.pdf',
+      pdf: '/docs/Paper Presentation.pdf',
       image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1200',
       description: 'The Technical Paper Presentation is an event designed to encourage students and professionals to explore, research, and present innovative ideas in various fields of technology and science. Participants prepare and present a paper on a technical topic of their choice—ranging from cutting-edge innovations, case studies, or theoretical research—to demonstrate their knowledge, analytical skills, and creativity.',
       detailedDescription: 'The Technical Paper Presentation provides a platform for students and researchers to present their work on emerging technologies and innovations. Present your research, get valuable feedback from industry experts and academicians, and compete for exciting prizes. Topics span across all domains of technology.',
