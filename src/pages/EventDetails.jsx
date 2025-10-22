@@ -436,10 +436,10 @@ function EventDetails() {
         'Judged on Creativity, Composition, Originality, and Technical Quality.'
       ]
     },
-    'paper-presentation': {
-      id: 'paper-presentation',
+    'paper presentation': {
+      id: 'paper presentation',
       title: 'Technical Paper Presentation',
-      category: 'Paper-Presentation',
+      category: 'Paper Presentation',
       date: 'October 31 - November 01, 2025',
       participants: '2-3 per team',
       registrationFee: '200',
