@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-
+import "./App.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import IntroVideo from "./Introvideo";
