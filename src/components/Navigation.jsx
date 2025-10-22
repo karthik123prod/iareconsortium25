@@ -90,15 +90,16 @@ function Navigation() {
         {/* Logo */}
         <Link to="/" style={styles.logo}>
           <img
-            src="/src/assests/logo.png"
-            alt="Consortium Logo"
-            style={{
-              width: '45px',
-              height: '45px',
-              objectFit: 'contain',
-              borderRadius: '8px',
-            }}
-          />
+  src="/assets/logo.png"
+  alt="Consortium Logo"
+  style={{
+    width: '45px',
+    height: '45px',
+    objectFit: 'contain',
+    borderRadius: '8px',
+  }}
+/>
+
           <div>
             <div style={styles.logoText}>CONSORTIUM 2025</div>
             <div style={styles.logoSubtext}>IARE National Level Technical Fest</div>

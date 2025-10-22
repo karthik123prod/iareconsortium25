@@ -1,7 +1,7 @@
 import { Calendar, Users, Trophy, Zap, Target, Rocket } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import background from '/src/assests/background.jpg';
-import logo from '/src/assests/logo.png';
+
 
 function Home() {
   const styles = {
@@ -359,26 +359,29 @@ sideImage: {
       
       {/* Right Side Image */}
       <div style={styles.featuresRight} className="featuresRight">
-        <img
-          src="/src/assests/side1.png"
-          alt="Consortium Showcase"
-          style={{
-            ...styles.sideImage,
-            width: '450px', // ✅ Fixed image width
-            height: 'auto',
-            borderRadius: '20px',
-            transition: 'transform 0.4s ease, box-shadow 0.4s ease',
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'scale(1.05)';
-            e.currentTarget.style.boxShadow = '0 15px 40px rgba(59,130,246,0.4)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'scale(1)';
-            e.currentTarget.style.boxShadow = 'none';
-          }}
-        />
-      </div>
+  <img
+    src="/assets/side1.png"
+    alt="Consortium Showcase"
+    loading="lazy"
+    style={{
+      ...styles.sideImage,
+      width: '100%',
+      maxWidth: '450px',
+      height: 'auto',
+      borderRadius: '20px',
+      transition: 'transform 0.4s ease, box-shadow 0.4s ease',
+    }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.transform = 'scale(1.05)';
+      e.currentTarget.style.boxShadow = '0 15px 40px rgba(59,130,246,0.4)';
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.transform = 'scale(1)';
+      e.currentTarget.style.boxShadow = 'none';
+    }}
+  />
+</div>
+
 
       {/* Left Side Content */}
       <div style={{ ...styles.featuresLeft, flex: 1 }}>
