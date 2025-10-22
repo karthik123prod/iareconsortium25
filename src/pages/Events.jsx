@@ -4,9 +4,9 @@ import { Calendar, Users, Trophy, IndianRupee, Eye, UserPlus } from 'lucide-reac
 function Events() {
   const eventsData = [
     {
-      id: 'paper presentation',
+      id: 'Paper-Presentation',
       title: 'Technical Paper Presentation-Where Ideas Meet Innovation.',
-      category: 'Paper Presentation',
+      category: 'Paper-Presentation',
       date: 'October 31 - November 01, 2025',
       participants: '2-3 per team',
       registrationFee: '200',
