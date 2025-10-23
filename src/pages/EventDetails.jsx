@@ -620,6 +620,7 @@ function EventDetails() {
         display: 'flex',
         justifyContent: 'flex-start', 
         padding: '20px 80px', /* Desktop padding */
+        marginLeft: '50px',
         marginTop: '80px', 
         zIndex: 5,
         position: 'relative',
