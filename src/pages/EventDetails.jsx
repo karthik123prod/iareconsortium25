@@ -309,7 +309,7 @@ function EventDetails() {
       participants: '3 members per team',
       registrationFee: '300',
       pdf: '/docs/Project Expo.pdf',
-      image: 'https://ahduni.edu.in/site/assets/files/30284/1600_x_900_dim_expo.1600x0.1400x0.webp',
+      image: 'https://www.iare.ac.in/sites/default/files/Consortium/2019/1.jpg',
       description: 'VisionX is a Project Expo that showcases innovative projects from all engineering departments, promoting creativity, teamwork, and practical learning while encouraging interdisciplinary collaboration and real-world problem-solving.  ',
       detailedDescription: 'A comprehensive quiz covering programming, technology trends, innovations, and general tech awareness. Multiple rounds with increasing difficulty.',
       rules: [
