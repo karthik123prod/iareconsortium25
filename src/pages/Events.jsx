@@ -34,7 +34,7 @@ function Events() {
       date: 'October 31 - November 01, 2025',
       participants: '3 members per team',
       registrationFee: '300',
-      image: 'https://news.kiit.ac.in/wp-content/uploads/2022/07/PROJECT-EXPO-2022-Day-2-750x430.jpg',
+      image: 'https://www.iare.ac.in/sites/default/files/Consortium/2019/1.jpg',
       shortDescription: 'VisionX is a Project Expo that showcases innovative projects from all engineering departments, promoting creativity, teamwork, and practical learning while encouraging interdisciplinary collaboration and real-world problem-solving.  ',
       description: 'A comprehensive quiz covering programming, technology trends, innovations, and general tech awareness. Multiple rounds with increasing difficulty.',
       
