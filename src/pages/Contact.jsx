@@ -300,20 +300,20 @@ const Contact = () => {
     // Static Department Data
     const departments = [
         {
-            name: 'Event Registration',
-            email: 'registration@iare.ac.in',
-            phone: '+91 40-40162444',
-            head: 'Prof. Sneha Sharma'
+            name: 'Convenor',
+            email: 'rd.shobharani@iare.ac.in',
+            phone: '+91 9550080044',
+            head: 'Dr. D Shobha Rani'
         },
         {
-            name: 'Technical Support',
-            email: 'tech@iare.ac.in',
-            phone: '+91 40-40162445',
-            head: 'Dr. Amit Patel'
+            name: 'Co-Convenor',
+            email: 'p.srilatha@iare.ac.in',
+            phone: '+91 9966009088',
+            head: 'Dr. P Srilatha'
         },
         {
-            name: 'Accommodation',
-            email: 'accommodation@iare.ac.in',
+            name: 'student Co-ordinator',
+            email: 'karthiktatineni34@gmail.com',
             phone: '+91 40-40162446',
             head: 'Mr. Ravi Kumar'
         },
