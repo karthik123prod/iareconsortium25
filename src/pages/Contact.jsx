@@ -322,7 +322,7 @@ const Contact = () => {
             email: 'saicharansilar24@gmail.com',
             phone: '+91 8499941104',
             Name: 'Silar Sai Charan'
-        }
+        },
         {
             name: 'Student Co-ordinator',
             email: 'mchaitanyareddy0211@gmail.com',
