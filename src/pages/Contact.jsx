@@ -303,31 +303,31 @@ const Contact = () => {
             name: 'Convenor',
             email: 'rd.shobharani@iare.ac.in',
             phone: '+91 9550080044',
-            Name: 'Dr. D Shobha Rani'
+            head: 'Dr. D Shobha Rani'
         },
         {
             name: 'Co-Convenor',
             email: 'p.srilatha@iare.ac.in',
             phone: '+91 9966009088',
-            Name: 'Dr. P Srilatha'
+            head: 'Dr. P Srilatha'
         },
         {
             name: 'Student Co-ordinator',
             email: 'karthiktatineni34@gmail.com',
             phone: '+91 7995466261',
-            Name: 'Tatineni Karthik sai'
+            head: 'Tatineni Karthik sai'
         },
         {
             name: 'Student Co-ordinator',
             email: 'saicharansilar24@gmail.com',
             phone: '+91 8499941104',
-            Name: 'Silar Sai Charan'
+            head: 'Silar Sai Charan'
         },
         {
             name: 'Student Co-ordinator',
             email: 'mchaitanyareddy0211@gmail.com',
             phone: '+91 8328371671',
-            Name: 'M Jaya chaitanya'
+            head: 'M Jaya chaitanya'
         }
     ];
 
