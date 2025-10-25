@@ -309,7 +309,7 @@ function EventDetails() {
       participants: '3 members per team',
       registrationFee: '300',
       pdf: '/docs/Project Expo.pdf',
-      image: 'https://ahduni.edu.in/site/assets/files/30284/1600_x_900_dim_expo.1600x0.1400x0.webp',
+      image: 'https://www.iare.ac.in/sites/default/files/Consortium/2019/1.jpg',
       description: 'VisionX is a Project Expo that showcases innovative projects from all engineering departments, promoting creativity, teamwork, and practical learning while encouraging interdisciplinary collaboration and real-world problem-solving.  ',
       detailedDescription: 'A comprehensive quiz covering programming, technology trends, innovations, and general tech awareness. Multiple rounds with increasing difficulty.',
       rules: [
@@ -436,8 +436,8 @@ function EventDetails() {
         'Judged on Creativity, Composition, Originality, and Technical Quality.'
       ]
     },
-    'paper-presentation': {
-      id: 'paper-presentation',
+    'Paper-Presentation': {
+      id: 'Paper-Presentation',
       title: 'Technical Paper Presentation',
       category: 'Paper-Presentation',
       date: 'October 31 - November 01, 2025',
@@ -620,6 +620,7 @@ function EventDetails() {
         display: 'flex',
         justifyContent: 'flex-start', 
         padding: '20px 80px', /* Desktop padding */
+        marginLeft: '50px',
         marginTop: '80px', 
         zIndex: 5,
         position: 'relative',
@@ -904,6 +905,7 @@ function EventDetails() {
       color: '#00df9a',
       backgroundColor: 'rgba(0, 223, 154, 0.1)',
       padding: '10px 20px',
+        marginTop: '-20px',
       borderRadius: '10px',
     }}
   >
@@ -917,7 +919,8 @@ function EventDetails() {
       background: 'linear-gradient(90deg, #16a34a, #22c55e)',
       color: '#fff',
       padding: '12px 26px',
-      borderRadius: '10px',
+    marginTop: '10px',
+      borderRadius: '-20px',
       fontSize: '16px',
       fontWeight: 'bold',
       textDecoration: 'none',

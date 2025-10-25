@@ -300,28 +300,34 @@ const Contact = () => {
     // Static Department Data
     const departments = [
         {
-            name: 'Event Registration',
-            email: 'registration@iare.ac.in',
-            phone: '+91 40-40162444',
-            head: 'Prof. Sneha Sharma'
+            name: 'Convenor',
+            email: 'rd.shobharani@iare.ac.in',
+            phone: '+91 9550080044',
+            head: 'Dr. D Shobha Rani'
         },
         {
-            name: 'Technical Support',
-            email: 'tech@iare.ac.in',
-            phone: '+91 40-40162445',
-            head: 'Dr. Amit Patel'
+            name: 'Co-Convenor',
+            email: 'p.srilatha@iare.ac.in',
+            phone: '+91 9966009088',
+            head: 'Dr. P Srilatha'
         },
         {
-            name: 'Accommodation',
-            email: 'accommodation@iare.ac.in',
-            phone: '+91 40-40162446',
-            head: 'Mr. Ravi Kumar'
+            name: 'Student Co-ordinator',
+            email: 'karthiktatineni34@gmail.com',
+            phone: '+91 7995466261',
+            head: 'Tatineni Karthik sai'
         },
         {
-            name: 'Partnerships',
-            email: 'partners@iare.ac.in',
-            phone: '+91 40-40162447',
-            head: 'Dr. Rajesh Kumar'
+            name: 'Student Co-ordinator',
+            email: 'saicharansilar24@gmail.com',
+            phone: '+91 8499941104',
+            head: 'Silar Sai Charan'
+        },
+        {
+            name: 'Student Co-ordinator',
+            email: 'mchaitanyareddy0211@gmail.com',
+            phone: '+91 8328371671',
+            head: 'M Jaya chaitanya'
         }
     ];
 
@@ -508,7 +514,6 @@ const Contact = () => {
                                         <option value="registration">Event Registration</option>
                                         <option value="technical">Technical Support</option>
                                         <option value="partnership">Partnership</option>
-                                        <option value="accommodation">Accommodation</option>
                                         <option value="other">Other</option>
                                     </select>
                                 </div>
@@ -567,7 +572,7 @@ const Contact = () => {
 
                     {/* Department Contacts */}
                     <div style={styles.departmentsSection}>
-                        <h2 style={styles.departmentsTitle}>Specific Contacts</h2>
+                        <h2 style={styles.departmentsTitle}>Contact Information</h2>
                         <p style={styles.departmentsSubtitle}>For quick assistance, contact the relevant department directly:</p>
                         
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
