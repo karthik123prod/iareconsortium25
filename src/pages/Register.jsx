@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { ArrowLeft, Users, IndianRupee, Calendar, Loader } from 'lucide-react';
 
-// Event configuration with team sizes and details
 const eventsConfig = {
   'Webathon': {
     title: 'WebNova - Igniting the Future Web',
@@ -67,7 +66,7 @@ const eventsConfig = {
     logo: '📷',
     date: 'October 31 - November 01, 2025'
   },
-  'paper-presentation': {
+  'Paper-Presentation': {
     title: 'Technical Paper Presentation',
     teamSize: { min: 2, max: 3 },
     fee: 200,
