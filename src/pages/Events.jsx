@@ -346,7 +346,7 @@ function Events() {
                   View Details
                 </Link>
                 <Link
-                  to="/register"
+  to={`/register/${event.id}`}  // NEW - passes event ID
                   style={{ ...styles.button, ...styles.registerButton }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.transform = 'scale(1.05)';

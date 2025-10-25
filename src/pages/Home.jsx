@@ -336,7 +336,7 @@ sideImage: {
             October 31-November 01, 2025
           </div>
           <div style={styles.ctaButtons}>
-            <Link to="/register" style={{ ...styles.ctaButton, ...styles.ctaPrimary }}>
+            <Link to="/events" style={{ ...styles.ctaButton, ...styles.ctaPrimary }}>
               Register Now
             </Link>
             <Link to="/events" style={{ ...styles.ctaButton, ...styles.ctaSecondary }}>
