@@ -817,7 +817,7 @@ function EventDetails() {
             </div>
 
             <Link
-              to="/register"
+    to={`/register/${eventId}`}
               className="registerButton"
               style={styles.registerButton}
               onMouseEnter={(e) => {
@@ -934,26 +934,25 @@ function EventDetails() {
      View more Details
   </a>
 
-  <a
-    href={event.registrationLink || '#'}
-    target="_blank"
-    rel="noopener noreferrer"
-    style={{
-      background: 'linear-gradient(90deg, #3b82f6, #60a5fa)',
-      color: '#fff',
-      padding: '12px 26px',
-      borderRadius: '10px',
-      fontSize: '16px',
-      fontWeight: 'bold',
-      textDecoration: 'none',
-      boxShadow: '0 4px 10px rgba(59, 130, 246, 0.4)',
-      transition: 'all 0.3s ease',
-    }}
-    onMouseOver={(e) => (e.target.style.background = 'linear-gradient(90deg, #2563eb, #3b82f6)')}
-    onMouseOut={(e) => (e.target.style.background = 'linear-gradient(90deg, #3b82f6, #60a5fa)')}
-  >
-    Register
-  </a>
+   <Link
+    to={`/register/${eventId}`}
+    style={{
+      background: 'linear-gradient(90deg, #3b82f6, #60a5fa)',
+      color: '#fff',
+      padding: '12px 26px',
+      borderRadius: '10px',
+      fontSize: '16px',
+      fontWeight: 'bold',
+      textDecoration: 'none',
+      boxShadow: '0 4px 10px rgba(59, 130, 246, 0.4)',
+      transition: 'all 0.3s ease',
+      display: 'inline-block',
+    }}
+    onMouseOver={(e) => (e.target.style.background = 'linear-gradient(90deg, #2563eb, #3b82f6)')}
+    onMouseOut={(e) => (e.target.style.background = 'linear-gradient(90deg, #3b82f6, #60a5fa)')}
+  >
+    Register
+  </Link>
 </div>
 
 
