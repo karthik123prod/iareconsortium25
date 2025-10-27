@@ -106,7 +106,6 @@ function EventRegistration() {
   
   const eventConfig = eventsConfig[eventId];
 
-  // Form state
   const [formData, setFormData] = useState({
     teamLeadName: '',
     college: '',
@@ -118,7 +117,6 @@ function EventRegistration() {
   });
 
   useEffect(() => {
-    // Initialize teammates based on min team size
     if (eventConfig) {
       const minTeammates = Math.max(0, eventConfig.teamSize.min - 1);
       setFormData(prev => ({
@@ -233,7 +231,6 @@ function EventRegistration() {
       });
 
       if (response.ok) {
-        // Redirect to District app for payment
         window.location.href = DISTRICT_PAYMENT_URL;
       } else {
         alert('Registration failed. Please try again or contact support.');
@@ -431,8 +428,6 @@ function EventRegistration() {
                 </div>
               </div>
             ))}
-
-            {/* Payment Info Banner */}
             <div className="my-6 p-6 bg-gradient-to-r from-green-500/10 to-blue-500/10 border border-green-500/30 rounded-lg">
               <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
                 <IndianRupee size={20} className="text-green-400" />

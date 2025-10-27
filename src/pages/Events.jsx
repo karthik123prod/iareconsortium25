@@ -155,7 +155,7 @@ function Events() {
       category: 'Photography',
       date: 'October 31 - November 01, 2025',
       time: '2:00 PM - 4:00 PM',
-      participants: 'max 5 members per team',
+      participants: '1 member per team',
       registrationFee: '99',
       image: 'https://www.adorama.com/alc/wp-content/uploads/2021/04/photography-camera-learning-feature.jpg',
       shortDescription: 'Chitrakala – The Cinema Club at IARE proudly presents the Short Film and Photography Contest, organized by the Department of Information Technology as part of Consortium 2k25. This event is a celebration of creativity and storytelling, giving students a platform to showcase their ideas through films and photography.',
