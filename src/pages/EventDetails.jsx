@@ -287,8 +287,7 @@ function EventDetails() {
         'Open to all streams and branches',
       ],
       themes: [
-        'Round 1: Own Theme',
-        'Round 2: Given Theme'
+        'Any theme is accepted.',
       ],
       guidelines: [
         'Teams must bring their own laptops or drawing materials.',
