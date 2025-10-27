@@ -291,11 +291,11 @@ function About() {
           </h2>
           <div style={styles.statsGrid}>
             <div style={styles.statCard}>
-              <div style={styles.statNumber}>10+</div>
+              <div style={styles.statNumber}>20+</div>
               <div style={styles.statLabel}>Technical Events</div>
             </div>
             <div style={styles.statCard}>
-              <div style={styles.statNumber}>2000+</div>
+              <div style={styles.statNumber}>5000+</div>
               <div style={styles.statLabel}>Expected Participants</div>
             </div>
             <div style={styles.statCard}>
