@@ -325,15 +325,15 @@ const Contact = () => {
         },
         {
             name: 'Student Co-ordinator',
-            email: 'mchaitanyareddy0211@gmail.com',
-            phone: '+91 8328371671',
-            head: 'M Jaya chaitanya'
+            email: 'renukaunnam13@gmail.com',
+            phone: '+91 8019491793',
+            head: 'Renuka Unnam'
         },
         {
             name: 'Student Co-ordinator',
             email: 'monicajampa2005@gmail.com',
             phone: '+91 8374070679',
-            head: 'J. Monica'
+            head: 'J Monica'
         }
     ];
 
